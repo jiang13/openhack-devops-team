@@ -24,6 +24,6 @@ stages:
       displayName: Build an image
       inputs:
         command: build
-        dockerfile: '**/Dockerfile_user2'
+        dockerfile: './apis/user-java/Dockerfile_user2'
         tags: |
           $(tag)
