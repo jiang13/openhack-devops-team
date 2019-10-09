@@ -85,6 +85,7 @@ jobs:
       location: '$(Azure.Location)'
       templateLocation: 'URL of the file'
       csmFileLink: 'https://raw.githubusercontent.com/Microsoft/azure-pipelines-yaml/master/templates/resources/arm/acr.json'
+      # overrideParameters: '-registryName "(ACR.Name)"−registryLocation"(Azure.Location)"'
       overrideParameters: '-registryName "(ACR.Name)"−registryLocation"(Azure.Location)"'
 
 - job: BuildImage
