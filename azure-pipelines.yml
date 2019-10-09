@@ -48,7 +48,8 @@ variables:
   Azure.ResourceGroupName: '{{#toAlphaNumericString repositoryName 50}}{{/toAlphaNumericString}}'
 
   # Update Azure.ServiceConnectionId value with AzureRm service endpoint.
-  Azure.ServiceConnectionId: '{{ azureServiceConnectionId }}'
+  # Azure.ServiceConnectionId: '{{ azureServiceConnectionId }}'
+  Azure.ServiceConnectionId: 'serviceConnectionUser2'
 
   # Update Azure.Location value with Azure Location.
   Azure.Location: 'eastus'
