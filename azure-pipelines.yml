@@ -106,6 +106,7 @@ jobs:
   - task: Docker@1
     displayName: 'Push an image'
     inputs:
+      azureSubscription: serviceConnectionUser2
       azureSubscriptionEndpoint: '$(Azure.ServiceConnectionId)'
       azureContainerRegistry: '$(ACR.FullName)/myContainerRegistryuser2'
       imageName: '$(ACR.ImageName)'
