@@ -99,7 +99,7 @@ jobs:
     inputs:
       azureSubscriptionEndpoint: '$(Azure.ServiceConnectionId)'
       azureContainerRegistry: '$(ACR.FullName)/myContainerRegistryuser2'
-      imageName: '$(ACR.ImageName)'
+      imageName: '$(ACR.ImageName)/image_user2'
       command: build
       dockerFile: './apis/trips/Dockerfile'
 
